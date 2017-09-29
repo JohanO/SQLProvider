@@ -2,13 +2,13 @@
 
 # .NET Standard / .NET Core support #
 
-This is very initial / experimental, from version 1.1.12-alpha6.
+This is very initial / experimental, from version 1.1.12-alpha7.
 
-Install e.g. with: `dotnet add package SQLProvider --version 1.1.12-alpha6`
+Install e.g. with: `dotnet add package SQLProvider --version 1.1.12-alpha7`
 
 ## Example project ##
 
-There is an example .NET-Coreapp 2.0 project at: [tests\SqlProvider.Core.Tests](https://github.com/fsprojects/SQLProvider/tree/netstandard/tests/SqlProvider.Core.Tests)
+There are some example .NET-Coreapp 2.0 projects at: [tests\SqlProvider.Core.Tests](https://github.com/fsprojects/SQLProvider/tree/netstandard/tests/SqlProvider.Core.Tests)
 
 There is a build.cmd which runs as follows:
 
@@ -39,6 +39,8 @@ The NuGet cache is located at:
 
 
 ## Limitations ##
+
+For now, you have to specify the runtime connectionstring for the GetDataContext method.
 
 You need your database connection driver to also support .NET Core.
 If your database connection driver has external dependencies, they have to be also present.
