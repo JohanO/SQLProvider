@@ -20,7 +20,8 @@ type HR = SqlDataProvider<Common.DatabaseProviderTypes.MSSQLSERVER, connStr>
 
 [<EntryPoint>]
 let main argv =
-    let ctx = HR.GetDataContext connStr
+    let runtimeConnectionString = connStr
+    let ctx = HR.GetDataContext runtimeConnectionString
     let employeesFirstName = 
         query {
             for emp in ctx.Dbo.Employees do

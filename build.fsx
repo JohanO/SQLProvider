@@ -161,9 +161,6 @@ Target "NuGet" (fun _ ->
 
     CleanDir "Temp"
     Branches.tag "" release.NugetVersion
-    // Manual process for now: Rename SQLProvider.*.nupkg to zip, open SQLProvider.nuspec inside it
-    // and replace "Unsupported0.0" to ".NETStandard2.0", update the file to zip-package,
-    // then rename it back and upload from NuGet.org or command-line.
 
     // push manually: nuget.exe push bin\SQLProvider.1.*.nupkg -Source https://www.nuget.org/api/v2/package
     //Branches.pushTag "" "upstream" release.NugetVersion
