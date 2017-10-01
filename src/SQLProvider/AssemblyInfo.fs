@@ -7,6 +7,7 @@ open System.Reflection
 [<assembly: AssemblyDescriptionAttribute("Type providers for SQL database access.")>]
 [<assembly: AssemblyVersionAttribute("1.1.11")>]
 [<assembly: AssemblyFileVersionAttribute("1.1.11")>]
+[<assembly: AssemblyKeyFileAttribute("Key.snk")>]
 do ()
 
 module internal AssemblyVersionInformation =
